@@ -22,9 +22,17 @@ Ale po kolei. Najpierw **SETUP**
 ## Setup apki
 
 ### git clone + nowe repo
-Przede wszystkim - **sklonuj** to repozytorium i utwórz nowe.<br>
+Przede wszystkim - **będziemy klonowali** to repozytorium i działali na Twoim.<br>
 Dlaczego nie *fork*?<br>
 ...bo chcemy, żeby każdy działał na własną rękę ;)
+Jeżeli wiesz jak to zrobić samodzielnie - możesz przejść dalej.
+Jeżeli nie:
+* utwórz nowe repo na swoim koncie GH
+* sklonuj >>TO<< repo: `git clone https://github.com/infakt/workshops_2023_registration_rails.git`
+* po przejściu do odpowiedniego folderu `cd workshops_2023_registration_rails`
+* ustaw **origin na swoje repozytorium** - `git remote set-url origin git@github.com:JanKowalski/test_repo_workshops.git`
+* gdzie `git@github.com:JanKowalski/test_repo_workshops.git` - to Twoje repo i Twój user :)
+* zrób od razu `git push`, żeby zweryfikować czy wszystko spięło się poprawnie!
 
 ### gemy
 klasyczny `bundle install`
