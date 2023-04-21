@@ -24,20 +24,27 @@
 
             <%= form_for(@task, url: tasks_path, html: { class: 'row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2' }) do |f| %>
               <div class="form-group">
-                <label class="form-label">
-                  <span>Title</span>
-                  <%= f.text_field :title, class: "form-control" %>
-                </label>
+                <div>
+                  <label class="form-label">
+                    <span>Title</span>
+                    <%= f.text_field :title, class: "form-control" %>
+                  </label>
+                </div>
+                <div >
+                  <label class="form-label">
+                    <span>Description</span>
+                    <%= f.text_area :description, class: "form-control" %>
+                  </label>
+                </div>
+                <div>
+                  <label class="form-label">
+                    <span>Deadline</span>
+                    <%= f.datetime_select  :deadline, class: "form-control" %>
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-success">Save</button>
               </div>
-
-              <div class="form-group">
-                <label class="form-label">
-                  <span>Description</span>
-                  <%= f.text_area :description, class: "form-control" %>
-                </label>
-              </div>
-
-              <button type="submit" class="btn btn-success">Save</button>
+              
             <% end %>
           </div>
         </div>
